@@ -1,0 +1,139 @@
+/* ================================
+   AUTH PAGES (Login & Register)
+   ================================ */
+
+/* Full height layout */
+.vh-100, .vh-90 {
+  min-height: 100vh;
+}
+
+/* Layout for auth pages is defined in theme.css (.auth-container) */
+
+/* Titles */
+.auth-title {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.auth-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* Inputs */
+.auth-input {
+  border-radius: 12px !important;
+  border: 1px solid var(--input-border, var(--border)) !important;
+  background: var(--input-bg, var(--surface)) !important;
+  color: var(--text) !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05) !important;
+  font-size: 0.95rem !important;
+  padding: 12px 14px !important;
+}
+
+.auth-input:focus {
+  border-color: var(--brand) !important;
+  box-shadow: 0 0 0 3px var(--brand-muted) !important;
+}
+
+/* Buttons */
+.auth-btn {
+  width: 100%;
+  margin-top: 8px;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.2s ease;
+  background: var(--accent);
+  color: var(--on-accent);
+  cursor: pointer;
+}
+
+.auth-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  background: var(--accent-dark);
+}
+
+.auth-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.auth-btn:disabled:hover {
+  transform: none;
+  background: var(--accent);
+}
+
+/* Right panel (image) */
+.auth-image {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.auth-image-overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  position: absolute;
+  inset: 0;
+}
+
+/* Back link */
+.auth-nav-back {
+  margin: 0 0 12px;
+}
+
+.auth-back {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.auth-back:hover {
+  color: var(--accent-dark);
+}
+
+/* Error message */
+.auth-error {
+  color: var(--danger);
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+/* Success banner (e.g. after registration) */
+.auth-success {
+  color: var(--success);
+  background: var(--success-bg);
+  border: 1px solid var(--accent-light);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+}
+
+.auth-switch {
+  margin-top: 18px;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.auth-switch a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .auth-image {
+    display: none;
+  }
+}

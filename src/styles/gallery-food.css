@@ -1,0 +1,10 @@
+/* Gallery food card image layering */
+.gallery-food-card__img {
+  position: relative;
+  z-index: 1;
+  background: var(--surface-strong);
+}
+
+.gallery-food-card__fallback {
+  z-index: 0;
+}

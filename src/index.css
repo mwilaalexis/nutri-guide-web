@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+}
+
+@import "./styles/theme.css";
+@import "./styles/theme-palettes.css";
+@import "./styles/theme-palettes-dark.css";
+@import "./styles/theme-usage.css";
+@import "./styles/theme-pro.css";
+@import "./styles/theme-ui.css";
+@import "./styles/interactions.css";
+@import "./styles/landing.css";
+@import "./styles/gallery-food.css";
+@import "./styles/theme-settings.css";
+@import "./styles/tracking-page.css";
+@import "./styles/food-page.css";
+@import "./styles/food-modal.css";
+@import "./styles/form-page.css";
+@import "./styles/users-page.css";
+@import "./styles/notifications-inbox.css";
+@import "./styles/dev-api-banner.css";
+@import "./styles/dashboard-layout.css";
+@import "./styles/extra-components.css";
+@import "./styles/bootstrap-compat.css";
+@import "./styles/auth.css";
+@import "./styles/responsive.css";
+
+@layer components {
+  .animate-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in 0.8s ease forwards;
+  }
+
+  @keyframes fade-in {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

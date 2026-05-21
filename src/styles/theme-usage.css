@@ -1,0 +1,107 @@
+/* Application stricte du 60-30-10 : CTA / liens vs marque */
+
+/* ——— 10 % : actions cliquables uniquement ——— */
+.btn-primary,
+.btn-success,
+.app-navbar__login {
+  background: var(--cta) !important;
+  border-color: var(--cta) !important;
+  color: var(--on-cta) !important;
+}
+
+.btn-primary:hover:not(:disabled),
+.btn-success:hover:not(:disabled),
+.app-navbar__login:hover {
+  background: var(--cta-hover) !important;
+  border-color: var(--cta-hover) !important;
+}
+
+.btn-link,
+.dashboard-main a:not(.btn):not(.dashboard-sidebar__link):not(.app-navbar__logo) {
+  color: var(--cta);
+}
+
+.btn-link:hover:not(:disabled),
+.dashboard-main a:not(.btn):not(.dashboard-sidebar__link):hover {
+  color: var(--cta-hover);
+}
+
+/* ——— 30 % : structure marque (pas d’accent) ——— */
+.logo,
+.app-navbar__logo,
+.app-page__kicker,
+.settings-page__kicker,
+.tracking-page__kicker,
+.dash-welcome__kicker,
+.theme-settings__heading {
+  color: var(--brand-deep);
+}
+
+.app-page__title,
+.settings-page__title,
+.tracking-page__title,
+.page-title,
+.dash-welcome__title {
+  color: var(--brand-deep);
+}
+
+.tracking-section__title,
+.app-panel__title,
+.tracking-layer-card__title {
+  color: var(--text);
+}
+
+.tracking-layer-card__score {
+  color: var(--brand);
+}
+
+.dash-progress__fill {
+  background: linear-gradient(90deg, var(--brand-deep), var(--brand) 45%, var(--brand-light));
+  box-shadow: none;
+}
+
+.dash-ring {
+  background: conic-gradient(
+    from -90deg,
+    var(--brand) calc(var(--ring-pct) * 1%),
+    var(--border) 0
+  );
+}
+
+.dash-ring__value {
+  color: var(--brand-deep);
+}
+
+/* sidebar active : voir theme-pro.css */
+
+.theme-settings__palette-card--active {
+  border-color: var(--brand);
+  background: var(--brand-muted);
+}
+
+.theme-settings__mode-option--active {
+  color: var(--brand-deep);
+}
+
+/* Focus champs : marque discrète (pas CTA) */
+input:focus,
+select:focus,
+textarea:focus,
+.app-input:focus {
+  outline-color: var(--brand-light);
+  border-color: var(--brand) !important;
+}
+
+/* ——— 60 % : fonds neutres (déjà via --bg / --surface) ——— */
+body,
+.dashboard-main {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.card,
+.app-panel,
+.tracking-section {
+  background: var(--surface);
+  border-color: var(--border);
+}

@@ -1,0 +1,55 @@
+/* Full-page forms (replaces modal overlays) */
+
+.form-page {
+  max-width: 34rem;
+}
+
+.form-page--wide {
+  max-width: 42rem;
+}
+
+.form-page--compact {
+  max-width: 26rem;
+}
+
+.form-page__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.form-page__back {
+  align-self: flex-start;
+}
+
+.form-page__header-text {
+  min-width: 0;
+}
+
+.form-page__body {
+  margin-bottom: 0;
+}
+
+.form-page__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle, var(--border));
+}
+
+.form-page__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.form-page__stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}

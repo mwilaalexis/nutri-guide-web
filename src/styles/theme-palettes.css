@@ -1,0 +1,289 @@
+/* =============================================================================
+   NutriGuide — 60-30-10 (règle professionnelle)
+   60 % neutre     → fonds (--neutral-60)
+   30 % marque     → menus, titres, encadrés (--brand-*)
+   10 % accent CTA → boutons d’action et liens cliquables uniquement (--cta-*)
+   Texte : gris très foncé (#1e1e1e), jamais #000 pur
+   ============================================================================= */
+
+/* --- Texte & états (tous thèmes) --- */
+[data-theme="light"] {
+  --text: #1e1e1e;
+  --text-light: #5c5c5c;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --overlay: rgba(0, 0, 0, 0.5);
+  --hover-subtle: rgba(0, 0, 0, 0.05);
+  --on-cta: #ffffff;
+  --on-accent: var(--on-cta);
+  --danger: #c92a2a;
+  --danger-bg: #fff5f5;
+  --warning: #946c00;
+  --warning-bg: rgba(148, 108, 0, 0.12);
+  --background: var(--bg);
+}
+
+[data-theme="dark"] {
+  --text: #e8e8e8;
+  --text-light: #a3a3a3;
+  --shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  --overlay: rgba(0, 0, 0, 0.65);
+  --hover-subtle: rgba(255, 255, 255, 0.06);
+  --on-cta: #ffffff;
+  --on-accent: var(--on-cta);
+  --danger: #ff6b6b;
+  --danger-bg: rgba(255, 107, 107, 0.12);
+  --warning: #ffd43b;
+  --warning-bg: rgba(255, 212, 59, 0.15);
+  --background: var(--bg);
+}
+
+/* --- Tokens par palette --- */
+[data-palette="forest"] {
+  --neutral-60: #f6f7f4;
+  --brand-30: #636b2f;
+  --brand-30-light: #bac095;
+  --brand-30-deep: #3d4127;
+  --cta-10: #4a8c31;
+  --cta-10-hover: #3a7026;
+}
+
+[data-palette="ocean"] {
+  --neutral-60: #f5f7fa;
+  --brand-30: #6a89a7;
+  --brand-30-light: #bdddfc;
+  --brand-30-deep: #384959;
+  --cta-10: #2b7de9;
+  --cta-10-hover: #1d63c4;
+}
+
+[data-palette="mono"] {
+  --neutral-60: #f7f7f7;
+  --brand-30: #3d3d3d;
+  --brand-30-light: #d4d4d4;
+  --brand-30-deep: #2b2b2b;
+  --cta-10: #1a1a1a;
+  --cta-10-hover: #000000;
+}
+
+[data-palette="berry"] {
+  --neutral-60: #f8f8fc;
+  --brand-30: #505081;
+  --brand-30-light: #8686ac;
+  --brand-30-deep: #272757;
+  --cta-10: #5b4fd6;
+  --cta-10-hover: #4539b8;
+}
+
+[data-palette="slate"] {
+  --neutral-60: #f7f7f2;
+  --brand-30: #6d8196;
+  --brand-30-light: #cbcbcb;
+  --brand-30-deep: #4a4a4a;
+  --cta-10: #0d9488;
+  --cta-10-hover: #0b7a70;
+}
+
+[data-palette="nord"] {
+  --neutral-60: #eceff4;
+  --brand-30: #5e81ac;
+  --brand-30-light: #88c0d0;
+  --brand-30-deep: #4c566a;
+  --cta-10: #a3be8c;
+  --cta-10-hover: #8fad72;
+}
+
+[data-palette="mocha"] {
+  --neutral-60: #eff1f5;
+  --brand-30: #8839ef;
+  --brand-30-light: #cba6f7;
+  --brand-30-deep: #4c4f69;
+  --cta-10: #40a02b;
+  --cta-10-hover: #35841f;
+}
+
+[data-palette="everforest"] {
+  --neutral-60: #efede4;
+  --brand-30: #5c6f64;
+  --brand-30-light: #a7c080;
+  --brand-30-deep: #4a555b;
+  --cta-10: #e69875;
+  --cta-10-hover: #d17f5c;
+}
+
+[data-palette="tokyo"] {
+  --neutral-60: #e6e7ed;
+  --brand-30: #565f89;
+  --brand-30-light: #7aa2f7;
+  --brand-30-deep: #414868;
+  --cta-10: #9ece6a;
+  --cta-10-hover: #7fb84a;
+}
+
+[data-palette="rosepine"] {
+  --neutral-60: #faf4ed;
+  --brand-30: #907aa9;
+  --brand-30-light: #c4a7e7;
+  --brand-30-deep: #6e6a86;
+  --cta-10: #d7827e;
+  --cta-10-hover: #c46862;
+}
+
+[data-palette="midnight"] {
+  --neutral-60: #e8eef4;
+  --brand-30: #3d5a80;
+  --brand-30-light: #98c1d9;
+  --brand-30-deep: #293241;
+  --cta-10: #ee6c4d;
+  --cta-10-hover: #d95a3d;
+}
+
+[data-palette="ember"] {
+  --neutral-60: #f5ede8;
+  --brand-30: #8b3a2a;
+  --brand-30-light: #c45c3e;
+  --brand-30-deep: #5c2e1f;
+  --cta-10: #f4a261;
+  --cta-10-hover: #e08b42;
+}
+
+[data-palette="sage"] {
+  --neutral-60: #f0f4ef;
+  --brand-30: #5c7356;
+  --brand-30-light: #7d9b76;
+  --brand-30-deep: #3d4f3a;
+  --cta-10: #a8c686;
+  --cta-10-hover: #8fb068;
+}
+
+[data-palette="dracula"] {
+  --neutral-60: #f8f8f2;
+  --brand-30: #6272a4;
+  --brand-30-light: #bd93f9;
+  --brand-30-deep: #44475a;
+  --cta-10: #50fa7b;
+  --cta-10-hover: #3de066;
+}
+
+[data-palette="onedark"] {
+  --neutral-60: #e8e8e8;
+  --brand-30: #528bcc;
+  --brand-30-light: #61afef;
+  --brand-30-deep: #3e4451;
+  --cta-10: #98c379;
+  --cta-10-hover: #7dab5e;
+}
+
+[data-palette="gruvbox"] {
+  --neutral-60: #fbf1c7;
+  --brand-30: #458588;
+  --brand-30-light: #83a598;
+  --brand-30-deep: #504945;
+  --cta-10: #b8bb26;
+  --cta-10-hover: #9aa01f;
+}
+
+[data-palette="kanagawa"] {
+  --neutral-60: #dcd7ba;
+  --brand-30: #727169;
+  --brand-30-light: #7e9cd8;
+  --brand-30-deep: #54546d;
+  --cta-10: #98bb6c;
+  --cta-10-hover: #7fa355;
+}
+
+/* --- Light : sémantique 60-30-10 --- */
+[data-theme="light"] {
+  --bg: var(--neutral-60);
+  --surface: #ffffff;
+  --surface-strong: color-mix(in srgb, var(--neutral-60) 70%, var(--brand-30-light));
+  --border: color-mix(in srgb, var(--brand-30-light) 45%, var(--neutral-60));
+  --navbar-bg: color-mix(in srgb, var(--neutral-60) 82%, transparent);
+  --navbar-border: color-mix(in srgb, var(--brand-30-light) 30%, transparent);
+  --sidebar-bg: var(--brand-30-deep);
+  --sidebar-text: #f2f2f0;
+  --sidebar-muted: color-mix(in srgb, var(--brand-30-light) 55%, white);
+  --sidebar-border: color-mix(in srgb, white 12%, transparent);
+  --brand: var(--brand-30);
+  --brand-light: var(--brand-30-light);
+  --brand-deep: var(--brand-30-deep);
+  --brand-muted: color-mix(in srgb, var(--brand-30) 14%, var(--neutral-60));
+  --cta: var(--cta-10);
+  --cta-hover: var(--cta-10-hover);
+  /* Alias legacy : accent = CTA seulement */
+  --accent: var(--cta);
+  --accent-dark: var(--cta-hover);
+  --accent-light: var(--brand-light);
+  --accent-muted: color-mix(in srgb, var(--cta) 14%, var(--neutral-60));
+  --success: var(--brand-deep);
+  --success-bg: var(--brand-muted);
+  --code-bg: var(--surface-strong);
+  --input-bg: #ffffff;
+  --input-border: var(--border);
+  --card-gradient: linear-gradient(165deg, var(--surface) 0%, var(--surface-strong) 100%);
+}
+
+[data-theme="light"][data-palette="mono"] {
+  --on-cta: #ffffff;
+  --on-accent: var(--on-cta);
+}
+
+/* --- Dark : neutre sombre + marque + CTA lumineux --- */
+[data-theme="dark"] {
+  --bg: #121212;
+  --surface: #1c1c1c;
+  --surface-strong: #262626;
+  --border: color-mix(in srgb, var(--brand-30) 35%, #121212);
+  --navbar-bg: color-mix(in srgb, #121212 90%, transparent);
+  --navbar-border: color-mix(in srgb, var(--brand-30) 25%, transparent);
+  --sidebar-bg: var(--brand-30-deep);
+  --sidebar-text: #ececec;
+  --sidebar-muted: color-mix(in srgb, var(--brand-30-light) 50%, #ececec);
+  --sidebar-border: color-mix(in srgb, white 8%, transparent);
+  --brand: var(--brand-30-light);
+  --brand-light: color-mix(in srgb, var(--brand-30-light) 70%, white);
+  --brand-deep: var(--brand-30);
+  --brand-muted: color-mix(in srgb, var(--brand-30) 22%, #121212);
+  --cta: var(--cta-10);
+  --cta-hover: color-mix(in srgb, var(--cta-10) 85%, white);
+  --accent: var(--cta);
+  --accent-dark: var(--cta-hover);
+  --accent-light: var(--brand-light);
+  --accent-muted: color-mix(in srgb, var(--cta) 20%, #121212);
+  --success: var(--brand-light);
+  --success-bg: var(--brand-muted);
+  --code-bg: var(--surface-strong);
+  --input-bg: var(--surface-strong);
+  --input-border: var(--border);
+  --card-gradient: linear-gradient(165deg, var(--surface) 0%, var(--surface-strong) 100%);
+}
+
+/* Dark per-palette tokens → theme-palettes-dark.css */
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .profile-section,
+[data-theme="dark"] .profile-hero,
+[data-theme="dark"] .modal {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+[data-theme="light"] input:not([type="checkbox"]):not([type="radio"]),
+[data-theme="light"] select,
+[data-theme="light"] textarea,
+[data-theme="dark"] input:not([type="checkbox"]):not([type="radio"]),
+[data-theme="dark"] select,
+[data-theme="dark"] textarea {
+  background: var(--input-bg);
+  color: var(--text);
+  border-color: var(--input-border);
+}
+
+[data-theme="dark"] .table th,
+[data-theme="dark"] .table td {
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .dashboard-sidebar {
+  border-right-color: var(--sidebar-border);
+}

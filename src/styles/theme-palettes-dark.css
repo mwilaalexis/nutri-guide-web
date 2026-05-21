@@ -1,0 +1,265 @@
+/* =============================================================================
+   Mode sombre — palettes dédiées (inspirées Nord, Catppuccin, Tokyo Night, etc.)
+   Chaque palette redéfinit fond, surfaces, marque et CTA.
+   ============================================================================= */
+
+[data-theme="dark"][data-palette="nord"] {
+  --bg: #2e3440;
+  --surface: #3b4252;
+  --surface-strong: #434c5e;
+  --border: #4c566a;
+  --navbar-bg: color-mix(in srgb, #2e3440 92%, transparent);
+  --sidebar-bg: #3b4252;
+  --brand-30-light: #88c0d0;
+  --brand-30: #5e81ac;
+  --brand-30-deep: #2e3440;
+  --cta-10: #a3be8c;
+  --cta-10-hover: #b8d4a8;
+}
+
+[data-theme="dark"][data-palette="mocha"] {
+  --bg: #1e1e2e;
+  --surface: #313244;
+  --surface-strong: #45475a;
+  --border: #585b70;
+  --navbar-bg: color-mix(in srgb, #1e1e2e 92%, transparent);
+  --sidebar-bg: #181825;
+  --brand-30-light: #cba6f7;
+  --brand-30: #8839ef;
+  --brand-30-deep: #11111b;
+  --cta-10: #a6e3a1;
+  --cta-10-hover: #b8f0b3;
+  --text: #cdd6f4;
+  --text-light: #a6adc8;
+}
+
+[data-theme="dark"][data-palette="everforest"] {
+  --bg: #2d353b;
+  --surface: #343f44;
+  --surface-strong: #3d484d;
+  --border: #475258;
+  --navbar-bg: color-mix(in srgb, #2d353b 92%, transparent);
+  --sidebar-bg: #232a2e;
+  --brand-30-light: #a7c080;
+  --brand-30: #7a8478;
+  --brand-30-deep: #2d353b;
+  --cta-10: #e69875;
+  --cta-10-hover: #f0ac8a;
+  --text: #d3c6aa;
+  --text-light: #a7b4a0;
+}
+
+[data-theme="dark"][data-palette="tokyo"] {
+  --bg: #1a1b26;
+  --surface: #24283b;
+  --surface-strong: #2f3549;
+  --border: #414868;
+  --navbar-bg: color-mix(in srgb, #1a1b26 92%, transparent);
+  --sidebar-bg: #16161e;
+  --brand-30-light: #7aa2f7;
+  --brand-30: #565f89;
+  --brand-30-deep: #1a1b26;
+  --cta-10: #9ece6a;
+  --cta-10-hover: #b3e88a;
+  --text: #c0caf5;
+  --text-light: #9aa5ce;
+}
+
+[data-theme="dark"][data-palette="rosepine"] {
+  --bg: #191724;
+  --surface: #1f1d2e;
+  --surface-strong: #26233a;
+  --border: #403d52;
+  --navbar-bg: color-mix(in srgb, #191724 92%, transparent);
+  --sidebar-bg: #13111a;
+  --brand-30-light: #c4a7e7;
+  --brand-30: #907aa9;
+  --brand-30-deep: #191724;
+  --cta-10: #ebbcba;
+  --cta-10-hover: #f5d0ce;
+  --text: #e0def4;
+  --text-light: #908caa;
+}
+
+[data-theme="dark"][data-palette="midnight"] {
+  --bg: #0f1419;
+  --surface: #1a2332;
+  --surface-strong: #243044;
+  --border: #2d3f56;
+  --navbar-bg: color-mix(in srgb, #0f1419 92%, transparent);
+  --sidebar-bg: #0a0e14;
+  --brand-30-light: #98c1d9;
+  --brand-30: #3d5a80;
+  --brand-30-deep: #0f1419;
+  --cta-10: #ee6c4d;
+  --cta-10-hover: #ff8a6f;
+  --text: #e8eef4;
+  --text-light: #9eb3c8;
+}
+
+[data-theme="dark"][data-palette="ember"] {
+  --bg: #1a1210;
+  --surface: #2a1f1c;
+  --surface-strong: #362822;
+  --border: #4a3830;
+  --navbar-bg: color-mix(in srgb, #1a1210 92%, transparent);
+  --sidebar-bg: #120c0a;
+  --brand-30-light: #c45c3e;
+  --brand-30: #8b3a2a;
+  --brand-30-deep: #1a1210;
+  --cta-10: #f4a261;
+  --cta-10-hover: #ffc078;
+  --text: #f0e6df;
+  --text-light: #b8a69c;
+}
+
+[data-theme="dark"][data-palette="sage"] {
+  --bg: #1a1f1c;
+  --surface: #252b28;
+  --surface-strong: #2f3733;
+  --border: #3d4a42;
+  --navbar-bg: color-mix(in srgb, #1a1f1c 92%, transparent);
+  --sidebar-bg: #121614;
+  --brand-30-light: #7d9b76;
+  --brand-30: #5c7356;
+  --brand-30-deep: #1a1f1c;
+  --cta-10: #a8c686;
+  --cta-10-hover: #c0db9f;
+  --text: #e4ebe1;
+  --text-light: #9caa96;
+}
+
+[data-theme="dark"][data-palette="dracula"] {
+  --bg: #282a36;
+  --surface: #343746;
+  --surface-strong: #44475a;
+  --border: #6272a4;
+  --navbar-bg: color-mix(in srgb, #282a36 92%, transparent);
+  --sidebar-bg: #21222c;
+  --brand-30-light: #bd93f9;
+  --brand-30: #6272a4;
+  --brand-30-deep: #282a36;
+  --cta-10: #50fa7b;
+  --cta-10-hover: #7dff9e;
+  --on-cta: #282a36;
+  --text: #f8f8f2;
+  --text-light: #b9bbd6;
+}
+
+[data-theme="dark"][data-palette="onedark"] {
+  --bg: #282c34;
+  --surface: #2c323c;
+  --surface-strong: #353b45;
+  --border: #3e4451;
+  --navbar-bg: color-mix(in srgb, #282c34 92%, transparent);
+  --sidebar-bg: #21252b;
+  --brand-30-light: #61afef;
+  --brand-30: #528bcc;
+  --brand-30-deep: #282c34;
+  --cta-10: #98c379;
+  --cta-10-hover: #b3e08a;
+  --text: #abb2bf;
+  --text-light: #848b98;
+}
+
+[data-theme="dark"][data-palette="gruvbox"] {
+  --bg: #282828;
+  --surface: #32302f;
+  --surface-strong: #3c3836;
+  --border: #504945;
+  --navbar-bg: color-mix(in srgb, #282828 92%, transparent);
+  --sidebar-bg: #1d2021;
+  --brand-30-light: #83a598;
+  --brand-30: #458588;
+  --brand-30-deep: #282828;
+  --cta-10: #fe8019;
+  --cta-10-hover: #ffa94d;
+  --on-cta: #1d2021;
+  --text: #ebdbb2;
+  --text-light: #a89984;
+}
+
+[data-theme="dark"][data-palette="kanagawa"] {
+  --bg: #1f1f28;
+  --surface: #2a2a37;
+  --surface-strong: #363646;
+  --border: #54546d;
+  --navbar-bg: color-mix(in srgb, #1f1f28 92%, transparent);
+  --sidebar-bg: #16161d;
+  --brand-30-light: #7e9cd8;
+  --brand-30: #727169;
+  --brand-30-deep: #1f1f28;
+  --cta-10: #98bb6c;
+  --cta-10-hover: #b3d68a;
+  --text: #dcd7ba;
+  --text-light: #727169;
+}
+
+/* Palettes classiques — fonds sombres teintés */
+[data-theme="dark"][data-palette="forest"] {
+  --bg: #1a1f18;
+  --surface: #242b22;
+  --surface-strong: #2e362c;
+  --border: #3d4a38;
+  --sidebar-bg: #141814;
+  --brand-30-light: #bac095;
+  --brand-30: #636b2f;
+  --brand-30-deep: #1a1f18;
+  --cta-10: #8fcf5a;
+  --cta-10-hover: #a8e07a;
+}
+
+[data-theme="dark"][data-palette="ocean"] {
+  --bg: #1a222c;
+  --surface: #24303d;
+  --surface-strong: #2d3c4d;
+  --border: #384959;
+  --sidebar-bg: #121820;
+  --brand-30-light: #88bdf2;
+  --brand-30: #6a89a7;
+  --brand-30-deep: #1a222c;
+  --cta-10: #5eb3ff;
+  --cta-10-hover: #7fc4ff;
+}
+
+[data-theme="dark"][data-palette="berry"] {
+  --bg: #18162a;
+  --surface: #221f38;
+  --surface-strong: #2c2848;
+  --border: #3a3560;
+  --sidebar-bg: #100e1c;
+  --brand-30-light: #8686ac;
+  --brand-30: #505081;
+  --brand-30-deep: #18162a;
+  --cta-10: #8b7cf8;
+  --cta-10-hover: #a89aff;
+}
+
+[data-theme="dark"][data-palette="slate"] {
+  --bg: #1c1c1e;
+  --surface: #262628;
+  --surface-strong: #323234;
+  --border: #444448;
+  --sidebar-bg: #141416;
+  --brand-30-light: #cbcbcb;
+  --brand-30: #6d8196;
+  --brand-30-deep: #1c1c1e;
+  --cta-10: #2dd4bf;
+  --cta-10-hover: #5eead4;
+}
+
+[data-theme="dark"][data-palette="mono"] {
+  --bg: #141414;
+  --surface: #1e1e1e;
+  --surface-strong: #282828;
+  --border: #3a3a3a;
+  --sidebar-bg: #0a0a0a;
+  --brand-30-light: #d4d4d4;
+  --brand-30: #a3a3a3;
+  --brand-30-deep: #141414;
+  --cta: #e8e8e8;
+  --cta-hover: #ffffff;
+  --accent: var(--cta);
+  --accent-dark: var(--cta-hover);
+  --on-cta: #1a1a1a;
+}

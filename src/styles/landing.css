@@ -1,0 +1,71 @@
+/* Landing page — hero video background */
+#hero.landing-hero {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: #0a0a0a;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero-video__media,
+.hero-video__poster {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.hero-video__poster {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.landing-hero__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.45) 40%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+  pointer-events: none;
+}
+
+.landing-hero__content {
+  position: relative;
+  z-index: 2;
+}
+
+.landing-cta-band {
+  background: var(--brand-deep);
+  color: var(--sidebar-text);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid color-mix(in srgb, white 10%, transparent);
+}
+
+.landing-cta-band .landing-cta-primary--inverse {
+  background: #fff !important;
+  color: var(--cta) !important;
+  box-shadow: var(--shadow-sm);
+}
+
+.landing-cta-band .landing-cta-primary--inverse:hover {
+  background: color-mix(in srgb, white 92%, var(--neutral-60)) !important;
+  color: var(--cta-hover) !important;
+}

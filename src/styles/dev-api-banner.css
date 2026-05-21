@@ -1,0 +1,23 @@
+.dev-api-banner {
+  margin: 0 0 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm, 8px);
+  border: 1px solid color-mix(in srgb, var(--danger) 45%, transparent);
+  background: var(--danger-bg);
+  color: var(--text);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.dev-api-banner strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--danger);
+}
+
+.dev-api-banner code {
+  font-size: 0.8125rem;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  background: var(--surface-strong);
+}
