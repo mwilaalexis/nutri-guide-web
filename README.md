@@ -1,4 +1,4 @@
-# NutriGuide UI
+# NutriGuide Web
 
 Frontend application for the NutriGuide nutrition platform. Single-page app that talks to backend services through the API gateway.
 
@@ -7,7 +7,7 @@ Frontend application for the NutriGuide nutrition platform. Single-page app that
 - User authentication flows
 - Profile and nutrition tracking views
 - Meal plan and food catalog interactions
-- Consumption of REST APIs exposed via [NutriGuidGateway](https://github.com/mwilaalexis/NutriGuidGateway)
+- Consumption of REST APIs exposed via [nutri-guide-gateway](https://github.com/mwilaalexis/nutri-guide-gateway)
 
 ## Tech stack
 
@@ -42,10 +42,10 @@ See `DEV.md` for additional development notes.
 
 | Service | Repository |
 |---------|------------|
-| Gateway | [NutriGuidGateway](https://github.com/mwilaalexis/NutriGuidGateway) |
-| Auth and profiles | [AuthAndUserProfileService](https://github.com/mwilaalexis/AuthAndUserProfileService) |
-| Food catalog | [Food-IngredientService](https://github.com/mwilaalexis/Food-IngredientService) |
-| Meal plans | [FoodPlanService](https://github.com/mwilaalexis/FoodPlanService) |
+| Gateway | [nutri-guide-gateway](https://github.com/mwilaalexis/nutri-guide-gateway) |
+| User service | [nutri-guide-user-service](https://github.com/mwilaalexis/nutri-guide-user-service) |
+| Food catalog | [nutri-guide-food-service](https://github.com/mwilaalexis/nutri-guide-food-service) |
+| Meal plans | [nutri-guide-plan-service](https://github.com/mwilaalexis/nutri-guide-plan-service) |
 
 ## Author
 
